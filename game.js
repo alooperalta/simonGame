@@ -30,7 +30,7 @@ function compare(){
   var flag=0;
   for(var j = 0; j < userClickedPattern.length; j++){
   if(userClickedPattern[j]!=gamePattern[j]){
-    var audio = new Audio("sounds/wrong.mp3");
+    playSound("wrong");
     $("h1").text("You lose! Press a key to play again!");
     level=0;
     userClickedPattern=[];
