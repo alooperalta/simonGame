@@ -48,7 +48,15 @@ if(userClickedPattern.length===gamePattern.length){
 }
 
 
-$('body').keypress(function(){
+$('body').keypress(function start(){
+  if(level===0)
+  {  level++;
+    nextSequence();
+
+  }
+});
+
+$('.level-title').click(function (){
   if(level===0)
   {  level++;
     nextSequence();
